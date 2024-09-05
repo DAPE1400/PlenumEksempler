@@ -11,14 +11,16 @@ public class Plenum3 {
         int alderPer = 23;
         int alderLine, sumAlder;
         alderLine = 22;
-        sumAlder = alderPer+alderLine;
+        sumAlder = alderPer + alderLine;
         System.out.println("Summen av alderen til Per og Line er "+sumAlder);
+
         // Med input og output bokser
         String innNavn = showInputDialog("Skriv inn navnet");
         String innAlder = showInputDialog("Skriv inn alderen");
         int alder = Integer.parseInt(innAlder);
-        int fødselsår = 2018-alder;
+        int fødselsår = 2024-alder;
         showMessageDialog(null, innNavn+" er født "+fødselsår);
+
         // desimaltall
         String innString1 = showInputDialog("Skriv inn et desimaltall:"); // kan også sette inn et heltall!
         String innString2 = showInputDialog("Skriv inn et desimaltall til:");
@@ -26,6 +28,7 @@ public class Plenum3 {
         double innTall2 = Double.parseDouble(innString2);
         double divisjon = innTall1 / innTall2;
         showMessageDialog(null, innTall1+" delt på "+innTall2+" blir "+divisjon);
+
         // hva skjer dersom vi skriver inn et desimal tall for alderen?
         // hva skjer dersom vi skriver inn tekst isteden for desimaltall?
         // hva skjer dersom vi setter 0 i nevneren i divisjonen?
