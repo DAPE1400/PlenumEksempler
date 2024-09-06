@@ -25,6 +25,7 @@ public class vafler {
         if (tilgjengeligMel >= mel) {
             System.out.println("Vi har nok mel.");
             tilgjengeligMel = tilgjengeligMel - mel; // Trekker fra mel
+//            tilgjengeligMel -= mel;
         } else {
             System.out.println("Vi trenger mer mel.");
         }
@@ -111,6 +112,8 @@ public class vafler {
         System.out.println("Tilgjengelig melk: " + tilgjengeligMelk + " dl");
         System.out.println("Tilgjengelige egg: " + tilgjengeligeEgg);
         System.out.println("Tilgjengelig smør: " + tilgjengeligSmor + " gram");
+
     }
 }
+
 

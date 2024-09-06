@@ -11,6 +11,7 @@ public class ExceptionEksempel {
     public static void main(String[] args) {
         double tall;
         String innStreng = showInputDialog("skriv inn et tall");
+
         try{
             tall = Double.parseDouble(innStreng);
         }

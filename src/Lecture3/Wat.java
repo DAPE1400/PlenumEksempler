@@ -22,8 +22,8 @@ public class Wat {
         System.out.print("2147483647 * 2 = ");
         System.out.println(2147483647 * 2);
 
-        //hint: https://www.youtube.com/watch?v=PZRI1IfStY0
         //floating point cant represent some numbers
+        //hint: https://www.youtube.com/watch?v=PZRI1IfStY0
         System.out.println(0.1+0.2);
 
         //too big and too precise floating point number problem
@@ -33,9 +33,6 @@ public class Wat {
         System.out.println(1000000 + 0.0000000004);
         System.out.println(1000000 + 0.0000000005);
 
-
         System.out.println("wat!");
-
     }
-
 }
