@@ -27,12 +27,21 @@ class Robot{
         }
         JOptionPane.showMessageDialog(null, "du har " + this.batteri +  " batter igjen");
     }
+    public boolean tomForBatteri(){
+        if(batteri<=0){
+            return true;
+        }
+        return false;
+    }
 }
 
 public class BotGame {
     public static void main(String[] args) {
         Robot robot = new Robot("GlassKanon-9000", 100);
-        String hendelse = JOptionPane.showInputDialog("skriv inn enten stein || mennekse || batteri");
-        robot.hondterHendelse(hendelse);
+        while(!robot.tomForBatteri()) {
+            String hendelse = JOptionPane.showInputDialog("skriv inn enten stein || mennekse || batteri");
+            robot.hondterHendelse(hendelse);
+        }
+        JOptionPane.showMessageDialog(null, "Game over!");
     }
 }
