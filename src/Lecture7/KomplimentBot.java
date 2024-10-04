@@ -1,0 +1,23 @@
+package Lecture7;
+
+import javax.swing.JOptionPane;
+
+public class KomplimentBot {
+    public static void main(String[] args) {
+        String følelse = "trist";
+        String komplement = "Du er fantastisk fordi du er utholdende og sterk!";
+        String checkinFølesle = "Føler du deg fortsatt trist? (ja/nei)";
+        String fullførtMelding =  "Så flott at du føler deg bedre!";
+
+        while (følelse.equals("trist")) {
+            JOptionPane.showMessageDialog(null, komplement);
+
+            String svar = JOptionPane.showInputDialog(null, checkinFølesle);
+
+            if (svar.equals("nei")) {
+                følelse = "glad";
+            }
+        }
+        JOptionPane.showMessageDialog(null, fullførtMelding);
+    }
+}
