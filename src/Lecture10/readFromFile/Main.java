@@ -10,14 +10,13 @@ public class Main {
         Scanner input = null;
         try {
             input = new Scanner(file);
+            while(input.hasNextLine()){
+                String s = input.nextLine();
+                System.out.println(s);
+            }
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println("Hm, what should we do here?");
         }
-        while(input.hasNextLine()){
-            String s = input.nextLine();
-            System.out.println(s);
-        }
-        input.close();
     }
 
 

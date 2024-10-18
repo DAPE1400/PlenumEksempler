@@ -1,31 +1,29 @@
 package Lecture10.tryCatch;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Program {
-    public void methodA() {
-        System.out.println("In methodA...");
-        System.out.println("Calling methodB...");
-        methodB();
-        System.out.println("MethodA done! Returning to caller.");
-    }
-
-    public void methodB() {
-        System.out.println("In methodB...");
-        System.out.println("Calling methodC...");
-        try{
-            methodC();
-        } catch(ArithmeticException ae){
-            System.out.println("Huff da: Unntak...");
+    public void readFromFile(String filename) {
+        File file = new File("files/eksempel.txt");
+        Scanner input = null;
+        try {
+            input = new Scanner(file);
+            while(input.hasNextLine()){
+                String s = input.nextLine();
+                System.out.println(s);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Unable to read file. Exception: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            if(input != null){
+                System.out.println("Look, finally always runs...");
+                input.close();
+            }
         }
-        System.out.println("MethodB done! Returning to caller.");
     }
 
-    public void methodC() {
-        System.out.println("In methodC...");
 
-        int i1 = 5;
-        int i2 = 0;
-        System.out.println("i1/i2=" + i1/i2);
-
-        System.out.println("MethodC done! Returning to caller.");
-    }
 }
