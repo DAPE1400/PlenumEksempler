@@ -1,7 +1,7 @@
 package Lecture8;
 
 public class Handleliste {
-    //TODO: consider if 10 size make sense? What does?
+    //TODO: hva gir mening som initial størrelse på arrayet?
     String[] handleliste = new String[10];
 
     public void addElement(String str){
