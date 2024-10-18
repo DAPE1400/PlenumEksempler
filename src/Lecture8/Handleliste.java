@@ -1,19 +1,17 @@
 package Lecture8;
 
-import java.util.ArrayList;
-
 public class Handleliste {
     public static void main(String[] args) {
         String[] handleliste = new String[10];
-        handleliste[1] = "Gummihansker";
-        handleliste[2] = "Sylteagurk";
-        handleliste[3] = "Duct tape";
-        handleliste[4] = "Marshmallows";
-        handleliste[5] = "Hagenisse";
-        handleliste[6] = "Kvikk lønsj";
-        handleliste[7] = "Stor presenning";
-        handleliste[8] = "Ballonger";
-        handleliste[9] = "WD-40";
-        handleliste[10] = "Vekkerklokke";
+        handleliste[0] = "Gummihansker";
+        handleliste[1] = "Sylteagurk";
+        handleliste[2] = "Duct tape";
+        handleliste[3] = "Marshmallows";
+        handleliste[4] = "Hagenisse";
+        handleliste[5] = "Kvikk lønsj";
+        handleliste[6] = "Stor presenning";
+        handleliste[7] = "Ballonger";
+        handleliste[8] = "WD-40";
+        handleliste[9] = "Vekkerklokke";
     }
 }
