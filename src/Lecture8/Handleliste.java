@@ -7,10 +7,22 @@ public class Handleliste {
     public void addElement(String str){
         //TODO: legg til et nytt element i den første tilgjengelige plassen (hint: != null)
         //TODO: hva hvis listen er tom for plasser?
+        for(int i=0;i<handleliste.length;i++){
+            if(handleliste[i] == null){
+                handleliste[i] = str;
+                return;
+            }
+        }
+        String [] handlelisteClone = new String[handleliste.length +1];
+        for(int i=0;i<handleliste.length;i++){
+            handlelisteClone[i] = handleliste[i];
+        }
+        handleliste = handlelisteClone;
+        handleliste[handleliste.length-1] = str;
     }
 
     public void removeElement(int pos){
-        //TODO: fjern element fra listen på posisjon pos
+        handleliste[pos] = null;
     }
 
     public static void main(String[] args) {
