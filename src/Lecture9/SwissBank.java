@@ -3,7 +3,7 @@ class SwissBankAccount {
     private String accountHolder;
     private double balance;
 
-    //TODO: create two constructors (one for anonymous accounts and one for named) (OVERLOAD)
+    //TODO: create two constructors both with starting balance (one for anonymous accounts that sets a default name and and one for named) (OVERLOAD)
 
     public void deposit(double amount){
         //TODO:  complete logic and overload this method with being able to deposit via int as well. (OVERLOAD)

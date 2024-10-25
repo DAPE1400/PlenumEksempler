@@ -17,7 +17,7 @@ public class Knitoff {
         for (int i = 0; i < spaceYarnBasket.size(); i++) {
             if (!spaceYarnBasket.get(i).contains("Yarn")) {
                 spaceYarnBasket.remove(i);
-                System.out.println("Disqualifying: " + spaceYarnBasket.get(i)); //mistake: after remove this is a different element.
+                System.out.println("Disqualifying: " + spaceYarnBasket.get(i)); //mistake: after remove, this is a different element.
             }
         }
 
