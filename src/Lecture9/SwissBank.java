@@ -3,7 +3,9 @@ class SwissBankAccount {
     private String accountHolder;
     private double balance;
 
-    //TODO: create two constructors both with starting balance (one for anonymous accounts that sets a default name and and one for named) (OVERLOAD)
+    //TODO: create two constructors both with starting balance.
+    // One for anonymous accounts that sets a default name and and one for named) (OVERLOAD)
+
 
     public void deposit(double amount){
         //TODO:  complete logic and overload this method with being able to deposit via int as well. (OVERLOAD)
@@ -11,10 +13,10 @@ class SwissBankAccount {
 
     //TODO: create a tostring method (TOSTRING)
 
-    //TODO: create withdraw functions (OVERLOAD)
+    //TODO: create two similar withdraw functions (OVERLOAD)
 
-    //TODO: create a totally legal transfer between two accounts by using another swissBankAccount to withdraw from
-    // Use the withdraw and deposit methods. (REFERENCE)
+    //TODO: create a method totally legal transfer between two accounts by using another swissBankAccount as a parameter
+    // to withdraw from. Use the withdraw and deposit methods. (REFERENCE)
 
 
 }
