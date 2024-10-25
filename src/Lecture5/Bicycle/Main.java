@@ -1,4 +1,4 @@
-package Lecture5;
+package Lecture5.Bicycle;
 
 public class Main {
     public static void main(String[] args) {

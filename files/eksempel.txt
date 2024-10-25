@@ -1,0 +1,6 @@
+Hei på deg.
+Det gikk jo veldig bra å lese fra fil!
+Her er noen tall også:
+1
+2
+3

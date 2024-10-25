@@ -1,4 +1,4 @@
-package Lecture5;
+package Lecture5.Bicycle;
 
 public class Bicycle {
     // To attributter: speed og gear. La de være public.
