@@ -23,4 +23,9 @@ class SwissBankAccount {
 
 public class SwissBank {
     //TODO: create two bank accounts one anonymous, and transfer some totally legal founds between the two.
+    //TODO: Print the before and after status of both accounts.
+    //TODO: do so while the toString method is commented out, what happened?
+
+    //TODO: harder task: create two anonymous methods where the owner is the variable name of the SwissBankAccount
+    // switch ownership of the two anonymous accounts by changing the references.
 }

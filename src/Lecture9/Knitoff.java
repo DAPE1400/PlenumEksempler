@@ -9,9 +9,9 @@ public class Knitoff {
 
         spaceYarnBasket.add("Nebula Yarn");
         spaceYarnBasket.add("Nano-fiber Polyester");    // Not allowed
+        spaceYarnBasket.add("Anti-Gravity Cloth");        // Not allowed
         spaceYarnBasket.add("Quantum Yarn");
         spaceYarnBasket.add("Dark Matter Yarn");
-        spaceYarnBasket.add("Anti-Gravity Cloth");        // Not allowed
 
         // Correctly disqualify all materials that are not yarn
         for (int i = 0; i < spaceYarnBasket.size(); i++) {
@@ -21,6 +21,6 @@ public class Knitoff {
             }
         }
 
-
+        System.out.println("valid yarn is: " + spaceYarnBasket);
     }
 }
