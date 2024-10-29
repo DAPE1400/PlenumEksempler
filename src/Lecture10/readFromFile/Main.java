@@ -6,6 +6,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        /*
+        File file = new File("files/eksempel.txt");
+        Scanner input = new Scanner(file);
+        while(input.hasNextLine()){
+            String s = input.nextLine();
+            System.out.println(s);
+        }
+        input.close();
+         */
+
+
+
+
+
+
+
+        /*
         File file = new File("files/eksempel.txt");
         Scanner input = null;
         try {
@@ -17,6 +34,7 @@ public class Main {
         } catch (FileNotFoundException e) {
             System.out.println("Hm, what should we do here?");
         }
+         */
     }
 
 

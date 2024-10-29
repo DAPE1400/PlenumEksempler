@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Program {
     public void readFromFile(String filename) {
-        File file = new File("files/eksempel.txt");
+        File file = new File(filename);
         Scanner input = null;
         try {
             input = new Scanner(file);
@@ -18,11 +18,12 @@ public class Program {
             System.out.println("Unable to read file. Exception: " + e.getMessage());
             e.printStackTrace();
         } finally {
+            System.out.println("Look, finally always runs...");
             if(input != null){
-                System.out.println("Look, finally always runs...");
                 input.close();
             }
         }
+        System.out.println("Returning from readFromFile");
     }
 
 
