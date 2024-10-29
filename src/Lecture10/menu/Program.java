@@ -19,7 +19,6 @@ public class Program {
                 case 3 -> quit();
                 default -> System.out.println("Your options are 1-3");
             }
-
         }
     }
 
@@ -33,7 +32,7 @@ public class Program {
 
     private void enterDate() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter date on format YYY-MM-DD");
+        System.out.println("Enter date on format YYYY-MM-DD");
         String s = scanner.nextLine();
         LocalDate ld = LocalDate.parse(s);
         System.out.println("Date was before now:"+ld.isBefore(LocalDate.now()));
